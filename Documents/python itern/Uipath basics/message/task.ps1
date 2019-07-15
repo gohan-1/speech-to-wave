@@ -1,0 +1,1 @@
+Invoke-RestMethod -uri "https://api.chucknorris.io/jokes/random"

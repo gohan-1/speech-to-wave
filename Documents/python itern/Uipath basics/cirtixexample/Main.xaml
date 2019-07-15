@@ -1,0 +1,120 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="476,1137" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="436,1057" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:GenericValue" Name="PushButton" />
+      <Variable x:TypeArguments="scg:IEnumerable(ui:TextInfo)" Name="PushButton1" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Skype Chrome_wi'" sap:VirtualizedContainerService.HintSize="414,832" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="9f70956388fcb9d3706245ac20e83684" Selector="&lt;wnd app='skype.exe' cls='Chrome_WidgetWin_1' title='Skype' /&gt;">
+      <ui:WindowScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="358,686" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Find relative image" sap:VirtualizedContainerService.HintSize="336,292" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image 'push button'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+                <ui:WaitImageAppear.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="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" />
+                </ui:WaitImageAppear.Image>
+                <ui:WaitImageAppear.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" Selector="&lt;ctrl name='Skype' role='document' /&gt;&lt;ctrl name='Ashish Benson, https://excelcult.com/2019/05/06/how-to-remove-du*' role='pane' /&gt;&lt;ctrl name='Ashish sent a website, How To Remove Duplicates From Datatable I*' role='push button' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:WaitImageAppear.Target>
+              </ui:WaitImageAppear>
+              <ui:SetClippingRegion Element="{x:Null}" Region="{x:Null}" Direction="TRANSLATE" DisplayName="Translate clipping region" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="SetClippingRegion_1">
+                <ui:SetClippingRegion.Size>
+                  <ui:Region Rectangle="0, -56, 31, 92" />
+                </ui:SetClippingRegion.Size>
+              </ui:SetClippingRegion>
+            </Sequence>
+            <ui:GetOCRText DisplayName="Get OCR Text 'push button'" sap:VirtualizedContainerService.HintSize="336,168" sap2010:WorkflowViewState.IdRef="GetOCRText_1" WordsInfo="[PushButton1]">
+              <ui:GetOCRText.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <ui:MicrosoftOCR FilterRegion="{x:Null}" Text="{x:Null}" DisplayName="Microsoft OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_1" Image="[Image]" Language="English (United Kingdom)" Profile="Screen" Scale="3" />
+                </ActivityFunc>
+              </ui:GetOCRText.OCREngine>
+              <ui:GetOCRText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="0eb0c28b2602ffff6e5ec5f3cd7b1b63" Selector="&lt;ctrl name='Skype' role='document' /&gt;&lt;ctrl name='Ashish Benson, https://excelcult.com/2019/05/06/how-to-remove-du*' role='pane' /&gt;&lt;ctrl name='https://excelcult.com/2019/05/06/how-to-remove-duplicates-from-d*' role='link' /&gt;&lt;ctrl role='DIV' /&gt;" WaitForReady="INTERACTIVE" />
+              </ui:GetOCRText.Target>
+              <ui:GetOCRText.Text>
+                <OutArgument x:TypeArguments="ui:GenericValue">[PushButton]</OutArgument>
+              </ui:GetOCRText.Text>
+            </ui:GetOCRText>
+            <ui:SetClippingRegion Element="{x:Null}" Region="{x:Null}" Direction="RECTANGLE" DisplayName="Reset clipping region" sap:VirtualizedContainerService.HintSize="336,22" sap2010:WorkflowViewState.IdRef="SetClippingRegion_2">
+              <ui:SetClippingRegion.Size>
+                <ui:Region Rectangle="0, 0, 0, 0" />
+              </ui:SetClippingRegion.Size>
+            </ui:SetClippingRegion>
+          </Sequence>
+        </ActivityAction>
+      </ui:WindowScope.Body>
+    </ui:WindowScope>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="414,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[PushButton]" />
+  </Sequence>
+</Activity>

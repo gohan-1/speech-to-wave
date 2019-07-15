@@ -1,0 +1,57 @@
+{
+  "Packages": [
+    {
+      "Package": {
+        "Id": "UiPath.Mail.Activities",
+        "Version": "1.4.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Lab\\.nuget\\packages\\bouncycastle/1.8.1\\lib/BouncyCastle.Crypto.dll",
+        "C:\\Users\\Lab\\.nuget\\packages\\interop.domino.dll/1.0.0\\lib/Interop.Domino.dll",
+        "C:\\Users\\Lab\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
+        "C:\\Users\\Lab\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
+        "C:\\Users\\Lab\\.nuget\\packages\\uipath.mail.activities/1.4.0\\lib/net452/MailKit.dll",
+        "C:\\Users\\Lab\\.nuget\\packages\\uipath.mail.activities/1.4.0\\lib/net452/MimeKit.dll",
+        "C:\\Users\\Lab\\.nuget\\packages\\uipath.mail.activities/1.4.0\\lib/net452/UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\Lab\\.nuget\\packages\\uipath.mail.activities/1.4.0\\lib/net452/UiPath.Mail.Activities.dll",
+        "C:\\Users\\Lab\\.nuget\\packages\\uipath.mail.activities/1.4.0\\lib/net452/UiPath.Mail.dll"
+      ]
+    }
+  ],
+  "Conflicts": [],
+  "ResolvedDependencies": {
+    "BouncyCastle": {
+      "Id": "BouncyCastle",
+      "Version": "1.8.1",
+      "Dependencies": []
+    },
+    "interop.domino.dll": {
+      "Id": "interop.domino.dll",
+      "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "Microsoft.Exchange.WebServices": {
+      "Id": "Microsoft.Exchange.WebServices",
+      "Version": "2.2.0",
+      "Dependencies": []
+    },
+    "UiPath.Mail.Activities": {
+      "Id": "UiPath.Mail.Activities",
+      "Version": "1.4.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Exchange.WebServices",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "BouncyCastle",
+          "Item2": "[1.8.1, )"
+        },
+        {
+          "Item1": "interop.domino.dll",
+          "Item2": "[1.0.0, )"
+        }
+      ]
+    }
+  }
+}

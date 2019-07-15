@@ -1,0 +1,6 @@
+Name,City,Temp
+Vishnu,calicut,23
+arun,kochi,24
+rahul,tvm,20
+berlin,pkd,24
+swathy,kochi,22
